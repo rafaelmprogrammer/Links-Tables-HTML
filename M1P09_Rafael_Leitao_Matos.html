@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Alterado o título para o título pretendido-->
+    <title>Prática 9</title>
+
+    <!--Estilização da página-->
+    <style>
+        /*Centrar o cabeçalho*/
+        header{
+            text-align: center;
+        }
+        /*Alterar o tamanho da imagem para 600px de largura máxima, altura automática e centrada*/
+        img{
+            max-width: 600px;
+            height: auto;
+        }
+        /*Alinhamento da  imagem ao centro através do id criado na div em que a imagem está contida*/
+        #imagem_banda{
+            text-align: center;
+        }
+
+        /*Estilização da tabela*/
+        /*Largura da tabela a largura 50% do ecrã*/
+        table{
+            width: 50%;
+        }
+        /*Acrescerntar bordas à tabela, com espaçamento de células e alinhamento do texto ao centro*/
+        table, th, td{
+            border: 5px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /*Alteração do tamanho e tipo de letra do cabeçalho da tabela, com cor de fundo alterada*/
+        thead{
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: bisque;
+        }
+
+        /*Alteração do tamanho e tipo de letra do corpo da tabela; com cor de fundo alterada*/
+        tbody{
+            font-size: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: azure;
+        }
+
+        /*Alteração do tamanho e tipo de letra do footer da tabela; com cor de fundo alterada*/
+        tfoot{
+            font-size: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Criação do cabeçalho-->
+    <header>
+        <!--Título-->
+        <h1>Artic Monkeys</h1>
+    </header>
+
+    <!--Adicionar uma imagem da banda, sendo a tag integrada numa div para facilitar o alinhamento centralizado-->
+    <div id="imagem_banda">
+        <img src="artic_monkeys.jpg" alt="T-shirt da banda Artic Monkeys">
+    </div>
+    
+    <!--Artigo com breve descrição da banda-->
+    <article>
+        <!--Título do artigo-->
+        <h2>Descrição da banda</h2>
+        <p>Arctic Monkeys é uma banda britânica de rock formada em 2002 nos subúrbios da cidade de Sheffield, na Inglaterra. O grupo é formado por Alex Turner, Matt Helders, Jamie Cook e Nick O'Malley. </p>
+        <p><small>Fonte: Wikipédia, 2024</small></p>
+    </article>
+
+    <!--Criação de tabela-->
+    <table>
+        <!--Cabeçalho da tabela-->
+        <thead>
+            <!--1ª linha do cabeçalho que ocupa todas células da primeira fila-->
+            <tr>
+                <td colspan="3">Top 3 canções da banda (Artic Monkeys)</td>
+            </tr>
+            <!--2ª linha do cabeçalho-->
+            <tr>
+                <td>Nome</td>
+                <td>Álbum</td>
+                <td>Duração</td>
+            </tr>
+        </thead>
+
+        <!--Corpo da tabela-->
+        <tbody>
+
+            <!--1ª Linha do corpo da tabela-->
+            <tr>
+                <td>Do I Wanna Know?</td>
+                <td>AM (2013)</td>
+                <td>4:32 min.</td>
+            </tr>
+
+            <!--2ª Linha do corpo da tabela-->
+            <tr>
+                <td>505</td>
+                <td>Favourite Worst Nightmare (2007)</td>
+                <td>4:13 min.</td>
+            </tr>
+
+            <!--3ª Linha do corpo da tabela-->
+            <tr>
+                <td>I Bet You Look Good on the Dancefloor</td>
+                <td>Whatever People Say I Am, That's What I'm Not (2006)</td>
+                <td>2:53 min.</td>
+            </tr>
+        </tbody>
+
+        <!--Footer da tabela, correspondente à última linha da tabela-->
+        <tfoot>
+            <tr>
+                <td colspan="3"><a href="https://www.arcticmonkeys.com">Website Oficial</a></td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+    
+</body>
+</html>
